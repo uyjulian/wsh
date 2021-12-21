@@ -2,7 +2,7 @@
 #define _idispatch_wrapper_
 
 #include <windows.h>
-#include <DispEx.h>
+#include <dispex.h>
 #include "tp_stub.h"
 
 #pragma warning(disable: 4786)
