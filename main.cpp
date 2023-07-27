@@ -141,7 +141,7 @@ protected:
 	/// 拡張子とProgId のマッピング
 	map<ttstr, ttstr> extMap;
 	// CLSID 比較用
-	struct CompareCLSID : public binary_function<CLSID,CLSID,bool> {
+	struct CompareCLSID {
 		bool operator() (const CLSID &key1, const CLSID &key2) const {
 #define CHK(a) if (key1.a!=key2.a) { return key1.a<key2.a; }
 			CHK(Data1);
